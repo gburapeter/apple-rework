@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { forwardRef, useEffect } from "react";
+import { forwardRef, useEffect, useRef, useState } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import {
 	Html,
@@ -10,23 +10,38 @@ import {
 	useTexture,
 } from "@react-three/drei";
 import useRefs from "react-use-refs";
-
+import { useInView } from "framer-motion";
 const rsqw = (t, delta = 0.1, a = 1, f = 1 / (2 * Math.PI)) =>
 	(a / Math.atan(1 / delta)) *
 	Math.atan(Math.sin(2 * Math.PI * t * f) / delta);
 
 export default function Macbook() {
+	const ref = useRef(null);
+	const scrollController = useRef(null);
+	const isInView = useInView(ref);
+
+	const [isEnabled, setEnabled] = useState(false);
+	const [pages, setPages] = useState(0);
+	useEffect(() => {
+		if (isInView == true) {
+			setEnabled(true);
+			setPages(4);
+		}
+	}, [isInView]);
 	return (
-		<Canvas
-			className="w-screen h-screen bg-blue-500"
-			shadows
-			dpr={[1, 2]}
-			camera={{ position: [0, -3.2, 40], fov: 12 }}
-		>
-			<ScrollControls pages={5}>
-				<Composition />
-			</ScrollControls>
-		</Canvas>
+		<>
+			<Canvas
+				className=""
+				shadows
+				dpr={[1, 2]}
+				camera={{ position: [0, -3.2, 40], fov: 12 }}
+			>
+				<ScrollControls enabled={isEnabled} pages={pages}>
+					<Composition />
+				</ScrollControls>
+			</Canvas>
+			<div ref={ref}></div>
+		</>
 	);
 }
 
@@ -45,7 +60,7 @@ function Composition({ ...props }) {
 		const r2 = scroll.range(1 / 4, 1 / 4);
 		const r3 = scroll.visible(4 / 5, 1 / 5);
 		mbp16.current.rotation.x = Math.PI - (Math.PI / 2) * rsqw(r1) + r2 * 0.33;
-		mbp14.current.rotation.x = Math.PI - (Math.PI / 2) * rsqw(r1) - r2 * 0.39;
+		// mbp14.current.rotation.x = Math.PI - (Math.PI / 2) * rsqw(r1) - r2 * 0.39;
 		group.current.rotation.y = THREE.MathUtils.damp(
 			group.current.rotation.y,
 			(-Math.PI / 1.45) * r2,
@@ -100,28 +115,13 @@ function Composition({ ...props }) {
 					intensity={2}
 					distance={width * 3}
 				/>
-				<M1 ref={mbp16} texture={textureRed} scale={width / 67}>
+				<M1 ref={mbp16} texture={textureRed} scale={width / 80}>
 					<Tag
 						ref={left}
-						position={[16, 5, 0]}
+						position={[25, 5, 0]}
 						head="up to"
 						stat="13x"
 						expl={`faster\ngraphics\nperformance²`}
-					/>
-				</M1>
-				<M1
-					ref={mbp14}
-					texture={textureBlue}
-					scale={width / 77}
-					rotation={[0, Math.PI, 0]}
-					position={[0, 0, -width / 2.625]}
-				>
-					<Tag
-						ref={right}
-						position={[10, 14, 0]}
-						head="up to"
-						stat="3.7x"
-						expl={`faster CPU\nperformance¹`}
 					/>
 				</M1>
 			</group>

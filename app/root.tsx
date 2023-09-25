@@ -13,7 +13,7 @@ import stylesheet from "~/tailwind.css";
 import { NextUIProvider } from "@nextui-org/react";
 import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
 import MyNavbar from "./components/Navbar";
-import { GlobalCanvas, SmoothScrollbar } from "@14islands/r3f-scroll-rig";
+
 export const links: LinksFunction = () => [
 	{ rel: "stylesheet", href: stylesheet },
 ];
@@ -31,7 +31,6 @@ export default function App() {
 				<Links />
 			</head>
 			<body>
-				{/* <ReactLenis root> */}
 				<NextUIProvider>
 					<div className="dark text-foreground bg-background">
 						<Outlet />
@@ -41,7 +40,6 @@ export default function App() {
 						<Analytics />
 					</div>
 				</NextUIProvider>
-				{/* </ReactLenis> */}
 			</body>
 		</html>
 	);

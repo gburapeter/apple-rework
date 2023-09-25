@@ -1,12 +1,5 @@
-import {
-	GlobalCanvas,
-	ScrollScene,
-	SmoothScrollbar,
-	UseCanvas,
-} from "@14islands/r3f-scroll-rig";
-import Lenis from "@studio-freight/lenis";
+import { ReactLenis } from "@studio-freight/react-lenis";
 import type { MetaFunction } from "@vercel/remix";
-import { useEffect } from "react";
 import { AppleIcon } from "~/components/AppleIcon";
 import { Example } from "~/components/Example";
 import Macbook from "~/components/Macbook";
@@ -30,15 +23,13 @@ function Section(props) {
 export default function Index() {
 	return (
 		<>
-			{/* <GlobalCanvas /> */}
-			{/* <SmoothScrollbar /> */}
-
+			{/* <ReactLenis root> */}
 			<MyNavbar />
 			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-900 to-black grid place-items-center">
 				<AppleIcon />
 			</Section>
-
-			<Section className=" bg-green-500 ">
+			{/* </ReactLenis> */}
+			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-900 to-black grid place-items-center ">
 				<Macbook />
 			</Section>
 			<Section className="bg-blue-500 grid place-items-center">
