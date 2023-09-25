@@ -10,10 +10,12 @@ import {
 import { Analytics } from "@vercel/analytics/react";
 import type { LinksFunction } from "@vercel/remix";
 import stylesheet from "~/tailwind.css";
+import { NextUIProvider } from "@nextui-org/react";
+
+import MyNavbar from "./components/Navbar";
 
 export const links: LinksFunction = () => [
 	{ rel: "stylesheet", href: stylesheet },
-	...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
 ];
 
 export default function App() {
@@ -29,11 +31,15 @@ export default function App() {
 				<Links />
 			</head>
 			<body>
-				<Outlet />
-				<ScrollRestoration />
-				<Scripts />
-				<LiveReload />
-				<Analytics />
+				<NextUIProvider>
+					<div className="dark text-foreground bg-background">
+						<Outlet />
+						<ScrollRestoration />
+						<Scripts />
+						<LiveReload />
+						<Analytics />
+					</div>
+				</NextUIProvider>
 			</body>
 		</html>
 	);
