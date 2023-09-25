@@ -1,5 +1,8 @@
+import { GlobalCanvas, SmoothScrollbar } from "@14islands/r3f-scroll-rig";
 import { ReactLenis } from "@studio-freight/react-lenis";
 import type { MetaFunction } from "@vercel/remix";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 import { AppleIcon } from "~/components/AppleIcon";
 import { Example } from "~/components/Example";
 import Macbook from "~/components/Macbook";
@@ -21,16 +24,21 @@ function Section(props) {
 }
 
 export default function Index() {
+	const ref = useRef(null);
+
+	const isInView = useInView(ref);
+
 	return (
 		<>
-			{/* <ReactLenis root> */}
+			{/* <GlobalCanvas /> */}
+			<SmoothScrollbar />
 			<MyNavbar />
-			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-900 to-black grid place-items-center">
+			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center">
 				<AppleIcon />
 			</Section>
-			{/* </ReactLenis> */}
-			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-900 to-black grid place-items-center ">
-				{/* <section ref={ref}>
+
+			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center ">
+				<section className="mt-[20.5vh]  text-7xl" ref={ref}>
 					<span
 						style={{
 							transform: isInView ? "none" : "translateX(-200px)",
@@ -41,10 +49,10 @@ export default function Index() {
 					>
 						Macbook Pro
 					</span>
-				</section> */}
+				</section>
 				<Macbook />
 			</Section>
-			<Section className="bg-blue-500 grid place-items-center">
+			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center">
 				<Example />
 			</Section>
 		</>
