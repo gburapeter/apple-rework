@@ -30,6 +30,18 @@ export default function Index() {
 			</Section>
 			{/* </ReactLenis> */}
 			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-900 to-black grid place-items-center ">
+				{/* <section ref={ref}>
+					<span
+						style={{
+							transform: isInView ? "none" : "translateX(-200px)",
+							opacity: isInView ? 1 : 0,
+							transition:
+								"all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+						}}
+					>
+						Macbook Pro
+					</span>
+				</section> */}
 				<Macbook />
 			</Section>
 			<Section className="bg-blue-500 grid place-items-center">
