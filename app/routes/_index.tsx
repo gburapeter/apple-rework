@@ -1,5 +1,3 @@
-import { GlobalCanvas, SmoothScrollbar } from "@14islands/r3f-scroll-rig";
-import { ReactLenis } from "@studio-freight/react-lenis";
 import type { MetaFunction } from "@vercel/remix";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
@@ -30,8 +28,6 @@ export default function Index() {
 
 	return (
 		<>
-			{/* <GlobalCanvas /> */}
-			<SmoothScrollbar />
 			<MyNavbar />
 			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center">
 				<AppleIcon />

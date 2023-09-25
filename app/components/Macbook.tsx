@@ -17,7 +17,7 @@ const rsqw = (t, delta = 0.1, a = 1, f = 1 / (2 * Math.PI)) =>
 
 export default function Macbook() {
 	const ref = useRef(null);
-	const scrollController = useRef(null);
+
 	const isInView = useInView(ref);
 
 	const [isEnabled, setEnabled] = useState(false);
