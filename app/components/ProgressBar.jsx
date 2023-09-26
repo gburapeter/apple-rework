@@ -27,7 +27,7 @@ export default function Benchmarks() {
 						size="md"
 						radius="md"
 						classNames={{
-							base: "w-[33vw]",
+							base: "w-[32vw]",
 							track: "drop-shadow-md border border-default",
 							indicator: "bg-white",
 							label: "tracking-wider font-medium text-default-600",
@@ -61,7 +61,7 @@ export default function Benchmarks() {
 						size="md"
 						radius="md"
 						classNames={{
-							base: "w-[33vw]",
+							base: "w-[32vw]",
 							track: "drop-shadow-md border border-default",
 							indicator: "bg-white",
 							label: "tracking-wider font-medium text-default-600",
@@ -95,7 +95,7 @@ export default function Benchmarks() {
 						size="md"
 						radius="md"
 						classNames={{
-							base: "w-[33vw]",
+							base: "w-[31.5vw]",
 							track: "drop-shadow-md border border-default",
 							indicator: "bg-white",
 							label: "tracking-wider font-medium text-default-600",
@@ -111,7 +111,9 @@ export default function Benchmarks() {
 			</div>
 
 			<div className="grid grid-rows-2 place-items-center pt-[35vh] ">
-				<div className="text-4xl">Wanna explore further?</div>
+				<div className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-5xl">
+					Wanna explore further?
+				</div>
 				<div className="text-2xl pt-[2vh]">Read some of our articles</div>
 			</div>
 		</>
