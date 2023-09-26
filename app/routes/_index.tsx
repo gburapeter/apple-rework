@@ -6,6 +6,8 @@ import Cardgang from "~/components/Cardgang";
 import { Example } from "~/components/Example";
 import Macbook from "~/components/Macbook";
 import MyNavbar from "~/components/Navbar";
+import ProgressBar from "../components/ProgressBar";
+import Benchmarks from "../components/ProgressBar";
 
 export const meta: MetaFunction = () => {
 	return [
@@ -51,13 +53,13 @@ export default function Index() {
 				</section>
 				<Macbook />
 			</Section>
-			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center">
-				<div>asd</div>
+			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid !h-min pt-[45vh]">
+				<Benchmarks />
 			</Section>
-			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid h-min ">
+			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid min-h-screen pt-[45vh] ">
 				<Cardgang />
 			</Section>
-			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center h-min">
+			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center !h-min">
 				<Example />
 			</Section>
 		</>
