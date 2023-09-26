@@ -37,7 +37,7 @@ export default function Benchmarks() {
 						value={100}
 					/>
 				</div>
-				<div className="text-green-500 font-bold row-span-2 col-start-5 self-center text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-4xl">
+				<div className="pl-[2vw] text-green-500 font-bold row-span-2 col-start-5 self-center text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-4xl">
 					1.2x
 				</div>
 				<div className="col-span-3 row-span-2 col-start-2 md:col-start-4 lg:col-start-4 xl:col-start-4 2xl:col-start-4 row-start-3">
@@ -71,7 +71,7 @@ export default function Benchmarks() {
 						value={100}
 					/>
 				</div>
-				<div className="row-span-2 col-start-5 md:col-start-7 lg:col-start-7 xl:col-start-7 2xl:col-start-7 row-start-3 self-center text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-4xl font-bold text-green-500">
+				<div className="pl-[2vw] row-span-2 col-start-5 md:col-start-7 lg:col-start-7 xl:col-start-7 2xl:col-start-7 row-start-3 self-center text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-4xl font-bold text-green-500">
 					1.18x
 				</div>
 				<div className="col-span-3 row-span-2 col-start-2 row-start-5">
