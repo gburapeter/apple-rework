@@ -50,10 +50,7 @@ function Composition({ ...props }) {
 	const { width, height } = useThree((state) => state.viewport);
 	const [group, mbp16, mbp14, keyLight, stripLight, fillLight, left, right] =
 		useRefs();
-	const [textureRed, textureBlue] = useTexture([
-		"/Chroma Red.jpg",
-		"/Chroma Blue.jpg",
-	]);
+	const [textureRed] = useTexture(["/background2-min.jpg"]);
 
 	useFrame((state, delta) => {
 		const r1 = scroll.range(0 / 4, 1 / 4);
@@ -88,6 +85,7 @@ function Composition({ ...props }) {
 			3 + 2 * (1 - r1)
 		);
 		left.current?.classList.toggle("show", r3);
+		right.current?.classList.toggle("show", r3);
 	});
 	return (
 		<>
@@ -118,9 +116,17 @@ function Composition({ ...props }) {
 					<Tag
 						ref={left}
 						position={[25, 5, 0]}
-						head="up to"
-						stat="13x"
-						expl={`faster\ngraphics\nperformance²`}
+						head="More than"
+						stat="2x"
+						expl="faster"
+					/>
+
+					<Tag
+						ref={right}
+						position={[-25, -5, 0]}
+						head="Up to"
+						stat="3x"
+						expl="battery"
 					/>
 				</M1>
 			</group>
@@ -177,7 +183,7 @@ const Tag = forwardRef(({ head, stat, expl, ...props }, ref) => {
 	return (
 		<Html ref={ref} className="data" center {...props}>
 			<div>{head}</div>
-			<h1>{stat}</h1>
+			<h1 className="text-3xl text-bold italic">{stat}</h1>
 			<h2>{expl}</h2>
 		</Html>
 	);
