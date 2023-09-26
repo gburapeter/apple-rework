@@ -6,7 +6,7 @@ import Cardgang from "~/components/Cardgang";
 import { Example } from "~/components/Example";
 import Macbook from "~/components/Macbook";
 import MyNavbar from "~/components/Navbar";
-import ProgressBar from "../components/ProgressBar";
+
 import Benchmarks from "../components/ProgressBar";
 
 export const meta: MetaFunction = () => {
