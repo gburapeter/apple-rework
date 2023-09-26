@@ -109,6 +109,11 @@ export default function Benchmarks() {
 					1.25x
 				</div>
 			</div>
+
+			<div className="grid grid-rows-2 place-items-center pt-[35vh] ">
+				<div className="text-4xl">Wanna explore further?</div>
+				<div className="text-2xl pt-[2vh]">Read some of our articles</div>
+			</div>
 		</>
 	);
 }
