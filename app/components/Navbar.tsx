@@ -51,12 +51,20 @@ export default function MyNavbar() {
 
 			<NavbarContent justify="end">
 				<NavbarItem className="hidden lg:flex">
-					<Button as={Link} color="primary" variant="flat">
+					<Button
+						as={Link}
+						className="text-blue-500 font-bold"
+						variant="flat"
+					>
 						Login
 					</Button>
 				</NavbarItem>
 				<NavbarItem>
-					<Button as={Link} color="primary" variant="flat">
+					<Button
+						as={Link}
+						className="text-blue-500 font-bold"
+						variant="flat"
+					>
 						Sign Up
 					</Button>
 				</NavbarItem>
