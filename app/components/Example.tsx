@@ -9,20 +9,14 @@ export const Example = () => {
 		return useTransform(value, [0, 1], [-distance, distance]);
 	}
 	return (
-		<div className="grid ">
-			<motion.div
-				className="bg-white h-40 aspect-square"
-				style={{
-					scale,
-				}}
-			>
-				<motion.div
-					className="item"
-					style={{
-						scaleY: useParallax(scrollYProgress, 1200),
-					}}
-				/>
-			</motion.div>
+		<div className="pt-[20vh] grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 grid-rows-7 gap-2 w-screen h-min justify-center  p-12">
+			<div className="h-[calc(100vh*0.8)]  bg-white col-span-2 row-span-7">
+				1
+			</div>
+			{/* <div className="h-[calc(100vh*0.8)] bg-white col-span-2 row-span-7 col-start-1 md:col-start-3 lg:col-start-3 xl:col-start-3 2xl:col-start-3">
+				3
+				Ani
+			</div> */}
 		</div>
 	);
 };

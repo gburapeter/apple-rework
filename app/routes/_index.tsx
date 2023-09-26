@@ -2,6 +2,7 @@ import type { MetaFunction } from "@vercel/remix";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { AppleIcon } from "~/components/AppleIcon";
+import Cardgang from "~/components/Cardgang";
 import { Example } from "~/components/Example";
 import Macbook from "~/components/Macbook";
 import MyNavbar from "~/components/Navbar";
@@ -15,7 +16,7 @@ export const meta: MetaFunction = () => {
 
 function Section(props) {
 	return (
-		<div className={`${props.className} w-screen h-screen overflow-y-auto`}>
+		<div className={`${props.className} w-screen h-screen`}>
 			{props.children}
 		</div>
 	);
@@ -32,7 +33,6 @@ export default function Index() {
 			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center">
 				<AppleIcon />
 			</Section>
-
 			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center ">
 				<section
 					className="mt-[20.5vh] text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
@@ -51,8 +51,11 @@ export default function Index() {
 				</section>
 				<Macbook />
 			</Section>
-			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center">
+			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center h-min">
 				<Example />
+			</Section>
+			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid h-min ">
+				<Cardgang />
 			</Section>
 		</>
 	);
