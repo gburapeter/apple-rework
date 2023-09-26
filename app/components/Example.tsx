@@ -13,10 +13,9 @@ export const Example = () => {
 			<div className="h-[calc(100vh*0.8)]  bg-white col-span-2 row-span-7">
 				1
 			</div>
-			{/* <div className="h-[calc(100vh*0.8)] bg-white col-span-2 row-span-7 col-start-1 md:col-start-3 lg:col-start-3 xl:col-start-3 2xl:col-start-3">
-				3
-				Ani
-			</div> */}
+			<div className="h-[calc(100vh*0.8)] bg-white col-span-2 row-span-7 col-start-1 md:col-start-3 lg:col-start-3 xl:col-start-3 2xl:col-start-3">
+				3 Ani
+			</div>
 		</div>
 	);
 };
