@@ -51,11 +51,14 @@ export default function Index() {
 				</section>
 				<Macbook />
 			</Section>
-			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center h-min">
-				<Example />
+			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center">
+				<div>asd</div>
 			</Section>
 			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid h-min ">
 				<Cardgang />
+			</Section>
+			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center h-min">
+				<Example />
 			</Section>
 		</>
 	);
