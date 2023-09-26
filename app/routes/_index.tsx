@@ -34,7 +34,10 @@ export default function Index() {
 			</Section>
 
 			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center ">
-				<section className="mt-[20.5vh]  text-7xl" ref={ref}>
+				<section
+					className="mt-[20.5vh] text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
+					ref={ref}
+				>
 					<span
 						style={{
 							transform: isInView ? "none" : "translateX(-200px)",
