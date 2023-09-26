@@ -18,7 +18,7 @@ export const meta: MetaFunction = () => {
 
 function Section(props) {
 	return (
-		<div className={`${props.className} w-screen h-screen`}>
+		<div className={`${props.className} w-screen min-h-screen`}>
 			{props.children}
 		</div>
 	);
@@ -35,7 +35,7 @@ export default function Index() {
 			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center">
 				<AppleIcon />
 			</Section>
-			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center ">
+			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center !h-screen ">
 				<section
 					className="mt-[20.5vh] text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
 					ref={ref}

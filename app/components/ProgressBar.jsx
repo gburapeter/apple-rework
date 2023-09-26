@@ -105,7 +105,7 @@ export default function Benchmarks() {
 						value={100}
 					/>
 				</div>
-				<div className="row-span-2 col-start-5 row-start-5 self-center text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-4xl font-bold text-green-500">
+				<div className="pl-[2vw] row-span-2 col-start-5 row-start-5 self-center text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-4xl font-bold text-green-500">
 					1.25x
 				</div>
 			</div>
