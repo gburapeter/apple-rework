@@ -31,7 +31,7 @@ export default function Macbook() {
 	return (
 		<>
 			<Canvas
-				className=""
+				className="mt-[15vh]"
 				shadows
 				dpr={[1, 2]}
 				camera={{ position: [0, -3.2, 40], fov: 12 }}
@@ -113,7 +113,7 @@ function Composition({ ...props }) {
 					distance={width * 3}
 				/>
 				<M1 ref={mbp16} texture={textureRed} scale={width / 80}>
-					<Tag
+					{/* <Tag
 						ref={left}
 						position={[25, 5, 0]}
 						head="More than"
@@ -127,7 +127,7 @@ function Composition({ ...props }) {
 						head="Up to"
 						stat="3x"
 						expl="battery"
-					/>
+					/> */}
 				</M1>
 			</group>
 		</>
