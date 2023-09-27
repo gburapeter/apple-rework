@@ -4,7 +4,6 @@ import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import {
 	Html,
 	useGLTF,
-	SoftShadows,
 	ScrollControls,
 	useScroll,
 	useTexture,
@@ -48,7 +47,7 @@ export default function Macbook() {
 function Composition({ ...props }) {
 	const scroll = useScroll();
 	const { width, height } = useThree((state) => state.viewport);
-	const [group, mbp16, mbp14, keyLight, stripLight, fillLight, left, right] =
+	const [group, mbp16, keyLight, stripLight, fillLight, left, right] =
 		useRefs();
 	const [textureRed] = useTexture(["/background2-min.jpg"]);
 
@@ -112,23 +111,7 @@ function Composition({ ...props }) {
 					intensity={2}
 					distance={width * 3}
 				/>
-				<M1 ref={mbp16} texture={textureRed} scale={width / 80}>
-					{/* <Tag
-						ref={left}
-						position={[25, 5, 0]}
-						head="More than"
-						stat="2x"
-						expl="faster"
-					/>
-
-					<Tag
-						ref={right}
-						position={[-25, -5, 0]}
-						head="Up to"
-						stat="3x"
-						expl="battery"
-					/> */}
-				</M1>
+				<M1 ref={mbp16} texture={textureRed} scale={width / 80}></M1>
 			</group>
 		</>
 	);
@@ -176,15 +159,5 @@ const M1 = forwardRef(({ texture, children, ...props }, ref) => {
 				material={materials.blackmatte}
 			/>
 		</group>
-	);
-});
-
-const Tag = forwardRef(({ head, stat, expl, ...props }, ref) => {
-	return (
-		<Html ref={ref} className="data" center {...props}>
-			<div>{head}</div>
-			<h1 className="text-3xl text-bold italic">{stat}</h1>
-			<h2>{expl}</h2>
-		</Html>
 	);
 });
