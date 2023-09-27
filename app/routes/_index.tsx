@@ -28,7 +28,9 @@ function Section(props) {
 export default function Index() {
 	const ref = useRef(null);
 
+	const iphone = useRef(null);
 	const isInView = useInView(ref);
+	const isIphone = useInView(iphone);
 
 	return (
 		<>
@@ -62,6 +64,21 @@ export default function Index() {
 				<Cardgang />
 			</Section>
 			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center !h-min ">
+				<section
+					className="mt-[20.5vh] text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
+					ref={iphone}
+				>
+					<span
+						style={{
+							transform: isIphone ? "none" : "translateX(-200px)",
+							opacity: isIphone ? 1 : 0,
+							transition:
+								"transform 2s ease-in-out, opacity 2s ease-in-out",
+						}}
+					>
+						Iphone 15
+					</span>
+				</section>
 				<IphoneWork />
 			</Section>
 

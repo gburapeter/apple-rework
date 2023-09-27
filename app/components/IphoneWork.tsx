@@ -26,7 +26,7 @@ export default function IphoneWork() {
 					snap={true} // Snap-back to center (can also be a spring config)
 					speed={5} // Speed factor>
 				>
-					<Iphone />
+					<Iphone scale={1.5} />
 
 					{/* </ScrollControls> */}
 				</PresentationControls>
