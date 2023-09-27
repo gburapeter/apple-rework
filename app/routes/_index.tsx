@@ -8,6 +8,7 @@ import Macbook from "~/components/Macbook";
 import MyNavbar from "~/components/Navbar";
 
 import Benchmarks from "../components/ProgressBar";
+import IphoneWork from "~/components/IphoneWork";
 
 export const meta: MetaFunction = () => {
 	return [
@@ -60,7 +61,11 @@ export default function Index() {
 			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid min-h-screen pt-[13vh] ">
 				<Cardgang />
 			</Section>
-			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center !h-min">
+			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center !h-min ">
+				<IphoneWork />
+			</Section>
+
+			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid min-h-screen pt-[13vh] ">
 				<Example />
 			</Section>
 		</>
