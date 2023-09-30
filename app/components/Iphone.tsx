@@ -9,9 +9,9 @@ export default function Iphone(props) {
 const ref = useRef();
 
  useFrame((_, delta) => {
-    //  ref.current.rotation.x += 0.01 * delta
+  
     ref.current.rotation.y += 0.5 * delta
-    ref.current.rotation.z += 0.05 * delta
+  
   });
 	return (
 		<group ref={ref} {...props} dispose={null}>
