@@ -11,7 +11,7 @@ import {
 import { motion } from "framer-motion";
 export default function Cardgang() {
 	return (
-		<div className="cursor-pointer max-w-screen gap-2 grid grid-cols-12 grid-rows-2 p-12">
+		<div className="cursor-pointer max-w-screen gap-2 grid grid-cols-12 grid-rows-3 p-12">
 			<Card className="border-4 border-transparent hover:border-slate-100 transition ease-in-out delay-150 col-span-12 sm:col-span-4 h-[300px]">
 				<CardHeader className="absolute z-10 top-1 flex-col !items-start">
 					<p className="text-tiny text-white uppercase font-bold">
