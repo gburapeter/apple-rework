@@ -29,8 +29,10 @@ export default function Index() {
 	const ref = useRef(null);
 
 	const iphone = useRef(null);
+	const iphone2 = useRef(null);
 	const isInView = useInView(ref);
 	const isIphone = useInView(iphone);
+		const isIphone2 = useInView(iphone2);
 
 	return (
 		<>
@@ -63,9 +65,9 @@ export default function Index() {
 			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid !h-min pt-[13vh] ">
 				<Cardgang />
 			</Section>
-			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center !h-min mt-[3.5vh]">
+			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center !h-min ">
 				<section
-					className=" text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
+					className="mt-[3.5vh] text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
 					ref={iphone}
 				>
 					<span
@@ -79,8 +81,23 @@ export default function Index() {
 						Introducing
 					</span>
 				</section>
-<h1 className="mt-[6.5vh] text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-6xl">Iphone 15
-				</h1>
+
+
+				<section
+					className="mt-[3.5vh] text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
+					ref={iphone2}
+				>
+					<span
+						style={{
+							transform: isIphone2 ? "none" : "translateX(-200px)",
+							opacity: isIphone2 ? 1 : 0,
+							transition:
+								"transform 5s ease-in-out, opacity ease-in-out",
+						}}
+					>
+						Iphone 15
+					</span>
+				</section>
 				<IphoneWork />
 			</Section>
 
