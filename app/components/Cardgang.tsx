@@ -60,7 +60,7 @@ export default function Cardgang() {
 			</Card>
 			<Card
 				isFooterBlurred
-				className="2xl:h-[450px] xl:h-[350px] border-4 border-transparent hover:border-slate-100 transition ease-in-out delay-150 w-full h-[300px] col-span-12 sm:col-span-5"
+				className="2xl:h-[350px] xl:h-[350px] border-4 border-transparent hover:border-slate-100 transition ease-in-out delay-150 w-full h-[300px] col-span-12 sm:col-span-5"
 			>
 				<CardHeader className="absolute z-10 top-1 flex-col items-start">
 					<p className="text-tiny text-white uppercase font-bold">New</p>
@@ -92,7 +92,7 @@ export default function Cardgang() {
 			</Card>
 			<Card
 				isFooterBlurred
-				className="2xl:h-[450px] xl:h-[350px] border-4 border-transparent hover:border-slate-100 transition ease-in-out delay-150 w-full h-[300px] col-span-12 sm:col-span-7"
+				className="2xl:h-[350px] xl:h-[350px] border-4 border-transparent hover:border-slate-100 transition ease-in-out delay-150 w-full h-[300px] col-span-12 sm:col-span-7"
 			>
 				<Image
 					removeWrapper
