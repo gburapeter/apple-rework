@@ -65,7 +65,7 @@ export default function Index() {
 			</Section>
 			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center !h-min ">
 				<section
-					className="mt-[12.5vh] text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
+					className="mt-[7.5vh] text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
 					ref={iphone}
 				>
 					<span
@@ -79,7 +79,7 @@ export default function Index() {
 						Introducing
 					</span>
 				</section>
-<h1 className="mt-[1.5vh] text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-6xl">Iphone 15
+<h1 className="mt-[4.5vh] text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-6xl">Iphone 15
 				</h1>
 				<IphoneWork />
 			</Section>
