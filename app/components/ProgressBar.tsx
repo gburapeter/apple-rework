@@ -51,7 +51,6 @@ export default function Benchmarks() {
 						initial="hidden"
 						animate={mainControls}
 						transition={{ duration: 2, delay: 0.5 }}
-						ref={file}
 						className="mt-[5.5vh] text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
 					>
 						<Progress
@@ -81,6 +80,7 @@ export default function Benchmarks() {
 						}}
 						label="M1"
 						value={100}
+						ref={file}
 						style={{ width: "80%" }}
 					/>
 				</div>
@@ -108,7 +108,6 @@ export default function Benchmarks() {
 						initial="hidden"
 						animate={clangControls}
 						transition={{ duration: 2, delay: 0.5 }}
-						ref={clang}
 						className="mt-[5.5vh] text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
 					>
 						<Progress
@@ -137,6 +136,7 @@ export default function Benchmarks() {
 							value: "text-foreground/60",
 						}}
 						label="M1 "
+						ref={clang}
 						value={100}
 					/>
 				</div>
@@ -165,7 +165,6 @@ export default function Benchmarks() {
 						initial="hidden"
 						animate={rayControls}
 						transition={{ duration: 2, delay: 0.5 }}
-						ref={ray}
 						className="mt-[5.5vh]  text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
 					>
 						<Progress
@@ -196,6 +195,7 @@ export default function Benchmarks() {
 						label="M1 "
 						style={{ width: "80%" }}
 						value={100}
+						ref={ray}
 					/>
 				</div>
 				<motion.div
