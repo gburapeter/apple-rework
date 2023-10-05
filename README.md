@@ -1,32 +1,31 @@
-# Remix
 
-This directory is a brief example of a [Remix](https://remix.run/docs) site that can be deployed to Vercel with zero configuration.
+<h1 align="center">Welcome to my Apple Rework project 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-v1.0-blue.svg?cacheSeconds=2592000" />
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
 
-## Deploy Your Owna
+> * The whole idea was to rethink the www.apple.com website
+> * 3D Models from Blender, credits for the Macbook: <a href="https://twitter.com/0xca0a">Paul Henschel</a>
+> * Remix + React
+> * Animations with Framer Motion + Tailwind CSS
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/remix&template=remix)
 
-_Live Example: https://remix-run-template.vercel.app_
+### 🚀 [Demo](https://apple-rework.vercel.app/)
 
-You can also deploy using the [Vercel CLI](https://vercel.com/cli):
 
-```sh
-npm i -g vercel
-vercel
-```
+## Author
 
-## Development
+👤 **Ghiurutan-Bura Péter**
 
-To run your Remix app locally, make sure your project's local dependencies are installed:
+* Github: [@gburapeter](https://github.com/gburapeter)
 
-```sh
-npm install
-```
+## 🤝 Contributing
 
-Afterwards, start the Remix development server like so:
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/gburapeter/room-portfolio-gbp-v2/issues). 
 
-```sh
-npm run dev
-```
+## Show your support
 
-Open up [http://localhost:3000](http://localhost:3000) and you should be ready to go!
+Give a ⭐️ if this project helped you!
