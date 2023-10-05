@@ -9,7 +9,7 @@
 
 > * The whole idea was to rethink the www.apple.com website
 > * 3D Models from Blender, credits for the Macbook: <a href="https://twitter.com/0xca0a">Paul Henschel</a>
-> * Remix + React
+> * Remix + React + React Three Fiber (three.js)
 > * Animations with Framer Motion + Tailwind CSS
 
 
