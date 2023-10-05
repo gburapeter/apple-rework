@@ -34,7 +34,6 @@ function Section(props) {
 }
 
 export default function Index() {
-	const ref = useRef(null);
 	const text = useRef(null);
 
 	const { scrollYProgress } = useScroll({
@@ -48,11 +47,6 @@ export default function Index() {
 		damping: 30,
 		restDelta: 0.001,
 	});
-
-	const iphone2 = useRef(null);
-	const isInView = useInView(ref);
-
-	const isIphone2 = useInView(iphone2);
 
 	const macbookos = useRef(null);
 	const isMac = useInView(macbookos);
@@ -109,24 +103,6 @@ export default function Index() {
 
 				<IphoneWork />
 			</Section>
-
-			{/* <Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center !h-min ">
-				<div
-					className="mt-[4vh] text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
-					ref={iphone2}
-				>
-					<span
-						style={{
-							transform: isIphone2 ? "none" : "translateX(-200px)",
-							opacity: isIphone2 ? 1 : 0,
-							transition:
-								"transform 5s ease-in-out, opacity ease-in-out",
-						}}
-					>
-						Iphone 15
-					</span>
-				</div>
-			</Section> */}
 
 			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid !min-h-screen pb-[10vh] pt-[13vh] ">
 				<Example />
