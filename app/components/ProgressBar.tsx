@@ -27,7 +27,7 @@ export default function Benchmarks() {
 						size="md"
 						radius="md"
 						classNames={{
-							base: "w-[32vw]",
+							base: "w-[31vw]",
 							track: "drop-shadow-md border border-default",
 							indicator: "bg-white",
 							label: "tracking-wider font-medium text-default-600",
@@ -61,7 +61,7 @@ export default function Benchmarks() {
 						size="md"
 						radius="md"
 						classNames={{
-							base: "w-[32vw]",
+							base: "w-[31vw]",
 							track: "drop-shadow-md border border-default",
 							indicator: "bg-white",
 							label: "tracking-wider font-medium text-default-600",
