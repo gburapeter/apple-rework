@@ -81,6 +81,7 @@ export default function Benchmarks() {
 						}}
 						label="M1"
 						value={100}
+						style={{ width: "80%" }}
 					/>
 				</div>
 				<motion.div
@@ -137,6 +138,7 @@ export default function Benchmarks() {
 						}}
 						label="M1 "
 						value={100}
+						style={{ width: "80%" }}
 					/>
 				</div>
 
@@ -193,6 +195,7 @@ export default function Benchmarks() {
 							value: "text-foreground/60",
 						}}
 						label="M1 "
+						style={{ width: "80%" }}
 						value={100}
 					/>
 				</div>
