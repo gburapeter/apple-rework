@@ -96,7 +96,7 @@ export default function Index() {
 					}}
 					transition={{ duration: 10 }}
 				>
-					<section className=" text-7xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-8xl 2xl:text-9xl">
+					<section className=" text-7xl sm:text-5xl md:text-7xl lg:text-7xl xl:text-8xl 2xl:text-9xl">
 						<h1>Introducing</h1>
 					</section>
 				</motion.div>
