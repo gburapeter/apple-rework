@@ -73,7 +73,7 @@ export default function Benchmarks() {
 						size="md"
 						radius="md"
 						classNames={{
-							base: "w-[32vw]",
+							base: "!w-[32vw]",
 							track: "drop-shadow-md border border-default",
 							indicator: "bg-white",
 							label: "tracking-wider font-medium text-default-600",
@@ -130,7 +130,7 @@ export default function Benchmarks() {
 						size="md"
 						radius="md"
 						classNames={{
-							base: "w-[32vw]",
+							base: "!w-[32vw]",
 							track: "drop-shadow-md border border-default",
 							indicator: "bg-white",
 							label: "tracking-wider font-medium text-default-600",
@@ -138,7 +138,6 @@ export default function Benchmarks() {
 						}}
 						label="M1 "
 						value={100}
-						style={{ width: "80%" }}
 					/>
 				</div>
 
@@ -188,7 +187,7 @@ export default function Benchmarks() {
 						size="md"
 						radius="md"
 						classNames={{
-							base: "w-[30vw]",
+							base: "!w-[30vw]",
 							track: "drop-shadow-md border border-default",
 							indicator: "bg-white",
 							label: "tracking-wider font-medium text-default-600",
