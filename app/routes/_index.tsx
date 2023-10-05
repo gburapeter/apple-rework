@@ -117,7 +117,7 @@ export default function Index() {
 				</div>
 			</Section> */}
 
-			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid min-h-screen pt-[13vh] ">
+			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid !min-h-screen pb-[10vh] pt-[13vh] ">
 				<Example />
 			</Section>
 		</>

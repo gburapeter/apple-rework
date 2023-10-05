@@ -1,4 +1,3 @@
-import { Image } from "@nextui-org/react";
 import {
 	motion,
 	useAnimation,
@@ -6,6 +5,14 @@ import {
 	useScroll,
 	useTransform,
 } from "framer-motion";
+import {
+	Card,
+	CardHeader,
+	CardBody,
+	CardFooter,
+	Image,
+	Button,
+} from "@nextui-org/react";
 import { useRef, useEffect } from "react";
 
 export const Example = () => {
@@ -36,12 +43,26 @@ export const Example = () => {
 				ref={ref}
 				className="h-[calc(100vh*0.8)]  bg-white col-span-2 row-span-7"
 			>
-				<Image
-					removeWrapper
-					alt="Card background"
-					className="z-0 w-full h-full object-cover"
-					src="/iphone152.jpg"
-				/>
+				<Card isFooterBlurred className=" w-full h-full ">
+					<Image
+						removeWrapper
+						alt="Relaxing app background"
+						className="z-0 w-full h-full object-cover"
+						src="/iphone15.jpg"
+					/>
+					<CardFooter className="absolute bg-black/40 top-0 z-10 border-t-1 border-default-600 dark:border-default-100">
+						<div className="flex flex-grow gap-2 items-center">
+							<div className="flex flex-col">
+								<p className="text-md font-bold text-white">
+									Iphone 15
+								</p>
+							</div>
+						</div>
+						<Button radius="full" size="sm">
+							Take me there
+						</Button>
+					</CardFooter>
+				</Card>
 				<motion.div
 					variants={{
 						hidden: { left: 0 },
@@ -74,12 +95,26 @@ export const Example = () => {
 				ref={ref}
 				className="h-[calc(100vh*0.8)] bg-white col-span-2 row-span-7 col-start-1 md:col-start-3 lg:col-start-3 xl:col-start-3 2xl:col-start-3"
 			>
-				<Image
-					removeWrapper
-					alt="Card background"
-					className="z-0 w-full h-full object-cover"
-					src="/iphone15.jpg"
-				/>
+				<Card isFooterBlurred className=" w-full h-full ">
+					<Image
+						removeWrapper
+						alt="Relaxing app background"
+						className="z-0 w-full h-full object-cover"
+						src="/iphone152.jpg"
+					/>
+					<CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
+						<div className="flex flex-grow gap-2 items-center">
+							<div className="flex flex-col">
+								<p className="text-md font-bold text-white">
+									New Camera options
+								</p>
+							</div>
+						</div>
+						<Button radius="full" size="sm">
+							Read more
+						</Button>
+					</CardFooter>
+				</Card>
 				<motion.div
 					variants={{
 						hidden: { right: 0 },
