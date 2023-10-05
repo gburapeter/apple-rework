@@ -99,7 +99,7 @@ export default function Index() {
 				<IphoneWork />
 			</Section>
 
-			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center !h-min ">
+			{/* <Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center !h-min ">
 				<div
 					className="mt-[4vh] text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
 					ref={iphone2}
@@ -115,7 +115,7 @@ export default function Index() {
 						Iphone 15
 					</span>
 				</div>
-			</Section>
+			</Section> */}
 
 			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid min-h-screen pt-[13vh] ">
 				<Example />
