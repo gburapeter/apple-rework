@@ -20,8 +20,8 @@ import { Button, Link } from "@nextui-org/react";
 
 export const meta: MetaFunction = () => {
 	return [
-		{ title: "New Remix App" },
-		{ name: "description", content: "Welcome to Remix!" },
+		{ title: "Apple" },
+		{ name: "description", content: "Welcome to Apple!" },
 	];
 };
 
