@@ -39,7 +39,7 @@ export const Example = () => {
 				}}
 				initial="hidden"
 				animate={mainControls}
-				transition={{ duration: 1, delay: 0.5 }}
+				transition={{ duration: 1.5, delay: 0.5 }}
 				ref={ref}
 				className="h-[calc(100vh*0.8)]  bg-white col-span-2 row-span-7"
 			>
@@ -70,7 +70,7 @@ export const Example = () => {
 					}}
 					initial="hidden"
 					animate={slideControls}
-					transition={{ duration: 2, ease: "easeIn" }}
+					transition={{ duration: 2.2, ease: "easeIn" }}
 					style={{
 						position: "absolute",
 						top: 4,
@@ -91,7 +91,7 @@ export const Example = () => {
 				}}
 				initial="hidden"
 				animate={mainControls}
-				transition={{ duration: 1, delay: 0.5 }}
+				transition={{ duration: 1.5, delay: 0.5 }}
 				ref={ref}
 				className="h-[calc(100vh*0.8)] bg-white col-span-2 row-span-7 col-start-1 md:col-start-3 lg:col-start-3 xl:col-start-3 2xl:col-start-3"
 			>
@@ -122,7 +122,7 @@ export const Example = () => {
 					}}
 					initial="hidden"
 					animate={slideControls}
-					transition={{ duration: 2, ease: "easeIn" }}
+					transition={{ duration: 2.2, ease: "easeIn" }}
 					style={{
 						position: "absolute",
 						top: 4,
