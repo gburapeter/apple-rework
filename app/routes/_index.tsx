@@ -1,5 +1,11 @@
 import type { MetaFunction } from "@vercel/remix";
-import { useInView } from "framer-motion";
+import {
+	useInView,
+	useScroll,
+	useTransform,
+	motion,
+	useSpring,
+} from "framer-motion";
 import { useRef } from "react";
 import { AppleIcon } from "~/components/AppleIcon";
 import Cardgang from "~/components/Cardgang";
@@ -27,12 +33,25 @@ function Section(props) {
 
 export default function Index() {
 	const ref = useRef(null);
+	const text = useRef(null);
 
-	const iphone = useRef(null);
+	const { scrollYProgress } = useScroll({
+		target: text,
+		offset: ["0 1", "1.99 1"],
+	});
+
+	// const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
+	const scaleProgress = useSpring(scrollYProgress, {
+		stiffness: 100,
+		damping: 30,
+		restDelta: 0.001,
+		duration: 2000,
+	});
+
 	const iphone2 = useRef(null);
 	const isInView = useInView(ref);
-	const isIphone = useInView(iphone);
-		const isIphone2 = useInView(iphone2);
+
+	const isIphone2 = useInView(iphone2);
 
 	return (
 		<>
@@ -66,25 +85,20 @@ export default function Index() {
 				<Cardgang />
 			</Section>
 			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center !h-min ">
-				<section
-					className="mt-[3.5vh] text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
-					ref={iphone}
+				<motion.div
+					ref={text}
+					style={{
+						scale: scaleProgress,
+					}}
+					transition={{ duration: 10 }}
 				>
-					<span
-						style={{
-							transform: isIphone ? "none" : "translateX(-200px)",
-							opacity: isIphone ? 1 : 0,
-							transition:
-								"transform 2s ease-in-out, opacity 2s ease-in-out",
-						}}
-					>
-						Introducing
-					</span>
-				</section>
-
+					<section className=" text-7xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-8xl 2xl:text-9xl">
+						<h1>Introducing</h1>
+					</section>
+				</motion.div>
 
 				<section
-					className="mt-[3.5vh] text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
+					className="mt-[10vh] text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
 					ref={iphone2}
 				>
 					<span
