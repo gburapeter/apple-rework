@@ -17,7 +17,7 @@ const icon = {
 };
 
 export const AppleIcon = () => (
-	<div className="grid place-items-center  w-60 h-60">
+	<div className="grid place-items-center h-40 w-40 md:w-60 md:h-60">
 		<motion.svg xmlns="http://www.w3.org/2000/svg" viewBox="-3 0 24 24">
 			<motion.path
 				variants={icon}
