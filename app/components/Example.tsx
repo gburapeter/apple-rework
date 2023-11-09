@@ -30,7 +30,7 @@ export const Example = () => {
 	}, [isInView]);
 
 	return (
-		<div className="pt-[20vh] grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 grid-rows-7 gap-2 w-screen  justify-center  p-12">
+		<div className="pt-[20vh] grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 grid-rows-7 gap-2 max-w-7xl justify-center  p-12">
 			<motion.div
 				style={{ position: "relative" }}
 				variants={{
