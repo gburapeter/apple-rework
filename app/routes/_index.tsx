@@ -85,7 +85,7 @@ export default function Index() {
 				<Benchmarks />
 			</Section>
 
-			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid !h-min pt-[13vh] ">
+			<Section className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid !h-min pt-[13vh] place-items-center ">
 				<Cardgang />
 			</Section>
 			<Section className="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-black via-blue-800 to-black grid place-items-center !min-h-screen ">
